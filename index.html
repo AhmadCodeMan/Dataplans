@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cheap data plans</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="start-page">
+        <p>My Data Plans</p>
+        <div class="name-container">
+            <div class="label-name">
+                <label for="">First Name:</label>
+                <input type="text" class="name" placeholder="Enter first name" maxlength="20" required="">
+                <label for="">Last Name:</label>
+                <input type="text" class="last-name" placeholder="Enter last name" maxlength="20" required>
+            </div>
+    
+        </div>
+
+        <button class="login" onclick="login()">Login</button>
+    </div>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="contact">
+                    <div class="logo"></div>
+                    <div class="cont-number" onclick="menuControl()">
+                        <div class="digits">Balance:</div>
+                        <div class="balance">
+                            N5000.00
+                        </div>
+                    </div>
+                </div>
+                <div class="brand">
+                   MY DATA PLANS
+                </div>
+            </div>
+        </header>
+        <div class="menu">
+            <button class="hide-balance" onclick="hideMainBalance()">Hide balance amount</button>
+            <button onclick="addWallet()">Fund wallet</button>
+            <button onclick="logOut()">Log Out</button>
+        </div>
+        <div class="success-alert">
+            Payment done successfully
+        </div>
+        <aside>
+            <div class="aside">
+                <div class="top">
+                    Buy your
+                </div> 
+                <div class="mid">
+                    cheap data
+                </div>
+                <div class="bottom">
+                    plans online
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div class="section">
+                <div class="network">
+                    <div class="network-text">
+                        Network
+                    </div>
+                    
+                    <select class="network-plan" onchange="checkSelection()">
+                        <option selected disabled>Select Your Network</option>
+                        <option value="mtn">MTN</option>
+                        <option value="airtel">Airtel</option>
+                        <option value="9mobile">9 Mobile</option>
+                        <option value="glo">Glo</option>
+                    </select>
+                </div>
+                <div class="quantity">
+                    <div class="data-quantity">
+                        Data Quantity
+                    </div>
+                    
+                    <select class="data" onchange="checkSelection()">
+                        <option selected disabled>Select data plan</option>
+                        <option value="500">500MB Monthly</option>
+                        <option value="1gb">1GB Monthly</option>
+                        <option value="2gb">2GB Monthly</option>
+                        <option value="3gb">3GB Monthly</option>
+                        <option value="4gb">4GB Monthly</option>
+                        <option value="5gb">5GB Monthly</option>
+                        <option value="6gb">6GB Monthly</option>
+                        <option value="7gb">7GB Monthly</option>
+                        <option value="8gb">8GB Monthly</option>
+                        <option value="9gb">9GB Monthly</option>
+                        <option value="10gb">10GB Monthly</option>
+                        <option value="11gb">11GB Monthly</option>
+                        <option value="12gb">12GB Monthly</option>
+                    </select>
+                </div>
+                <div class="msg">
+                    
+                </div>
+                <div class="mobile">
+                    <div class="mobile-name">
+                        Mobile
+                    </div>
+                    <input type="number" placeholder="Enter phone number" id="phone">
+                </div>
+                <button onclick="processTransaction()" class="submitInfo">Buy Now</button>
+                <div class="error-reporter">
+                    
+                </div>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="about">
+                    <div class="title">
+                        MY DATA PLANS
+                    </div>
+                    <div class="phone">
+                          <span>Phone: </span>09065293293
+                    </div>
+                    <div class="email">
+                        <span>Email: </span>info@mydataplans.com
+                    </div>
+                    <div class="address">
+                        <span>Address: </span>Mayo-Gwoi, Jalingo
+                    </div>
+                    <div class="state">
+                        <span>State: </span> Taraba
+                    </div>
+                    <div class="country">
+                        <span>Country: </span>
+                    Nigeria
+                    </div>
+                    
+                </div>
+                <div class="copywrite">
+                    <div>
+                        ©2023 by My Data Plans.
+                    </div>Developed by <a href="www.ahmadusman.site">Ahmad Usman</a>
+                </div>
+            </div>
+            <div class="payment-page">
+                <div class="payment-page-child">
+                    <div class="confirm-title">Please Confirm!!!</div>
+                    <div class="confirm-phone">
+                        
+                    </div>
+                    <div class="confirm-network">
+                        
+                    </div>
+                    <div class="confirm-data">
+                        
+                    </div>
+                    
+                    <div class="control-payment">
+                        <button class="cancel-payment"onclick="cancelPayment()">Cancel</button>
+                        <button onclick="submitPayment()" class="confirm-button">Confirm</button>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="success-image">
+                    <img src="img/success.gif" alt="">
+                </div>
+        </footer>
+        
+        <div class="fund-wallet">
+            <div class="fund-wallet-child">
+                <div class="remove-wallet" onclick="removeWallet()">x</div>
+                <p>Add any amount</p>
+                <label for="">
+                    Amount:
+                </label>
+                <input type="number" maxlength="5" placeholder="Enter Amount" id="credit-amount" required>
+                <button onclick="creditWallet()">Add Money</button>
+            </div>
+
+        </div>
+    </div>
+    <!----
+    <script src="javascript/script.js"></script>
+    ---->
+    <script src="javascript/script.js">
+        
+    </script>
+</body>
+</html>
