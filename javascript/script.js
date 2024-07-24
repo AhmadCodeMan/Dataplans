@@ -73,7 +73,8 @@ function hideMainBalance(){
 }
 function addWallet(){
     document.querySelector(".fund-wallet").style.height = "250px";
-    document.querySelector('.menu').style.height = "0px"
+    
+    //document.querySelector('.menu').style.height = "0px"
 }
 function removeWallet(){
     document.querySelector(".fund-wallet").style.height = "0px"
