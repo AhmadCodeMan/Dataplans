@@ -449,6 +449,7 @@ footer{
     box-shadow: 0px 0px 10px #000;
     border-radius: 10px;
     transition: .5s;
+    z-index: 1000;
 }
 .fund-wallet-child{
     position: relative;
