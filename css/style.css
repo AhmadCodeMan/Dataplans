@@ -455,6 +455,7 @@ footer{
     position: relative;
 }
 .remove-wallet{
+    font-family: verdana;
     color: #d31010;
     font-size: 23px;
     font-weight: 900;
